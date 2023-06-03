@@ -35,10 +35,12 @@ export default function Hero() {
     />
         </h2>
       <div className='flex items-center gap-4 sm:gap-5 md:gap-6'>
-        <Link href="https://github.com/lilmonstar">
+        {/* <Link href="https://github.com/lilmonstar"> */}
+        <Link href="#home">
             <FaGithub className='text-2xl sm:text-3xl text-green-600 cursor-pointer hover:text-green-700 hover:scale-110 dark:bg-green-600 dark:text-slate-200 dark:rounded-full hover:dark:bg-green-700'/>
         </Link>
-        <Link href="https://www.facebook.com/mike.1stblood">
+        {/* <Link href="https://www.facebook.com/mike.1stblood"> */}
+        <Link href="#home">
             <FaFacebook className='text-2xl sm:text-3xl text-green-600 cursor-pointer hover:text-green-700 hover:scale-110 dark:bg-green-600 dark:text-slate-200 dark:rounded-full hover:dark:bg-green-700'/>
         </Link>
       </div>
