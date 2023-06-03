@@ -36,10 +36,10 @@ export default function Hero() {
         </h3>
       <div className='flex items-center gap-4 sm:gap-5 md:gap-6'>
         <Link href="https://github.com/lilmonstar">
-            <BsGithub className='text-2xl sm:text-3xl text-sky-400 bg-white cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 rounded-full hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
+            <BsGithub className='text-2xl sm:text-3xl md:text-4xl text-sky-400 cursor-pointer hover:text-sky-500 rounded-full hover:scale-110 dark:bg-sky-400 dark:text-slate-200 hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
         </Link>
         <Link href="https://www.facebook.com/mike.1stblood">
-            <BsFacebook className='text-2xl sm:text-3xl text-sky-400 bg-white cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 rounded-full hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
+            <BsFacebook className='text-2xl sm:text-3xl md:text-4xl text-sky-400 cursor-pointer hover:text-sky-500 rounded-full hover:scale-110 dark:bg-sky-400 dark:text-slate-200 hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
         </Link>
       </div>
     </div>
