@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import myImg from '../../public/images/neom-unsplash.jpg'
+import myImg from '../public/images/neom-unsplash.jpg'
 import { TypeAnimation } from 'react-type-animation'
 import { FaGithub, FaFacebook } from 'react-icons/fa'
 import Link from 'next/link'
