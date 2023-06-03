@@ -14,7 +14,7 @@ export default function Hero() {
     </div>
     <div className='absolute w-full h-screen top-0 left-0 bg-white/50 flex flex-col justify-center items-center gap-6 md:gap-7 lg:gap-y-8'>
         <h1 className='text-slate-900 dark:text-white'>I&apos;m Michael Balderas</h1>
-        <h3 className='text-slate-700 dark:text-slate-100'>I&apos;m 
+        <h3 className='text-slate-700 dark:text-slate-50'>I&apos;m 
         <TypeAnimation
       sequence={[
         'a Web Developer',
