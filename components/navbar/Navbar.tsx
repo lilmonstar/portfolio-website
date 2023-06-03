@@ -23,10 +23,10 @@ const Navbar:React.FC<NavbarProps> = ({onClick}) => {
     }    
 
   return (
-    <header className='px-2 md:px-4 py-2 md:py-4 text-sky-400 text-xs sm:text-base md:text-xl lg:text-2xl w-full dark:text-white'>
+    <header className='fixed shadow-xl z-[50] bg-gray-50 px-2 md:px-4 py-2 md:py-4 text-sky-400 text-xs sm:text-base md:text-xl lg:text-2xl w-full dark:text-white dark:bg-slate-900'>
         <nav className='flex justify-between w-full items-center'>
         <div className='flex items-center gap-2'>
-        <Link href="#home" className="p-1 border-2 border-slate-800 rounded-full dark:border-sky-400 hover:scale-110 ease-in duration-200">  
+        <Link href="#home" className="p-1 border-2 border-slate-900 rounded-full dark:border-sky-400 hover:scale-110 ease-in duration-200">  
             <div>MB</div>
         </Link>
         <span className='hidden lg:flex'>Michael Balderas</span>

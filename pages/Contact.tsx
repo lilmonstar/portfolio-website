@@ -3,7 +3,9 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='w-full h-screen' id='contact'>Contact</div>
+    <div className='w-full h-screen'>
+        <h2 className='mt-10 text-center' id='contact'>Contact</h2>
+    </div>
   )
 }
 
