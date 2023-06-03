@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import myImg from '../public/images/neom-unsplash.jpg'
+import myImg from '../public/images/neo-unsplash.jpg'
 import { TypeAnimation } from 'react-type-animation'
 import { BsFacebook, BsGithub } from 'react-icons/bs'
 import Link from 'next/link'
@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className='relative' id='home'>
     <div className='w-full h-screen'>
-        <Image src={myImg} alt='image' className='w-full h-screen object-cover object-right'></Image>
+        <Image src={myImg} alt='image' className='w-[100%] h-screen object-cover'></Image>
     </div>
     <div className='absolute w-full h-screen top-0 left-0 bg-white/50 flex flex-col justify-center items-center gap-6 md:gap-7 lg:gap-y-8'>
         <h1 className='text-slate-900 dark:text-white'>I&apos;m Michael Balderas</h1>
