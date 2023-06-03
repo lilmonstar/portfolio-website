@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import myImg from '../public/images/neom-unsplash.jpg'
 import { TypeAnimation } from 'react-type-animation'
-import { FaGithub, FaFacebook } from 'react-icons/fa'
+import { BsFacebook, BsGithub } from 'react-icons/bs'
 import Link from 'next/link'
 
 export default function Hero() {
@@ -36,10 +36,10 @@ export default function Hero() {
         </h3>
       <div className='flex items-center gap-4 sm:gap-5 md:gap-6'>
         <Link href="https://github.com/lilmonstar">
-            <FaGithub className='text-2xl sm:text-3xl text-sky-400 cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 dark:rounded-full hover:dark:bg-sky-500'/>
+            <BsGithub className='text-2xl sm:text-3xl text-sky-400 bg-white cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 rounded-full hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
         </Link>
         <Link href="https://www.facebook.com/mike.1stblood">
-            <FaFacebook className='text-2xl sm:text-3xl text-sky-400 cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 dark:rounded-full hover:dark:bg-sky-500'/>
+            <BsFacebook className='text-2xl sm:text-3xl text-sky-400 bg-white cursor-pointer hover:text-sky-500 hover:scale-110 dark:bg-sky-400 dark:text-slate-200 rounded-full hover:dark:bg-sky-500 shadow-lg shadow-gray-400'/>
         </Link>
       </div>
     </div>
