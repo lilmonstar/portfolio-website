@@ -45,7 +45,7 @@ function Contact() {
               </div>
               <div className='flex flex-col gap-1'>
                 <label htmlFor="message">Message</label>
-                <input type="text" id='message'/>
+                <textarea rows={3} id='message'/>
               </div>
               <button className='p-3 mt-1 md:mt-2 border-2 border-sky-400 shadow-lg rounded-lg hover:bg-sky-400 hover:text-white ease-in duration-300'>Send</button>
             </form>
