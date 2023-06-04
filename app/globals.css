@@ -25,4 +25,8 @@
   h4{
     @apply text-base sm:text-xl md:text-2xl lg:text-3xl
   }
+
+  input{
+    @apply outline-none rounded-md p-1 md:p-2 border-2 border-gray-300
+  }
 }
