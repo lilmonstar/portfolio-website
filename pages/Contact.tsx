@@ -15,7 +15,7 @@ type FormValues = {
 
 function Contact() {
   const [successMessage, setSuccessMessage] = useState('')
-  const formRef = useRef()
+  const formRef = useRef<any>()
   const form = useForm<FormValues>()
   const { register, handleSubmit, formState:{errors}, reset } = form
 
