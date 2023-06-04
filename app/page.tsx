@@ -1,4 +1,3 @@
-'use client'
 import Navbar from "@/components/navbar/Navbar";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
