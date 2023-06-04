@@ -56,27 +56,27 @@ const Navbar = () => {
         </div>
         </nav>
         <div className={sideBar?'fixed w-full h-screen top-0 right-0 bg-gray-100/70 dark:white/70':''}>
-        <div className={sideBar?'fixed w-[75%] sm:w-[60%] md:w-[45%] lg:w-[40%] h-screen bg-slate-300 flex flex-col justify-center items-center z-[150] dark:bg-slate-900 top-0 right-0 text-slate-900 dark:text-white ease-in duration-500':'fixed w-[75%] h-screen bg-slate-300 flex flex-col justify-center items-center z-[150] dark:bg-slate-900 top-0 right-[-100%] text-slate-900 dark:text-white ease-in duration-500'}>
+        <div className={sideBar?'fixed w-[75%] sm:w-[60%] md:w-[45%] lg:w-[40%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[150] dark:from-slate-400 dark:to-slate-900 top-0 right-0 text-slate-900 dark:text-white ease-in duration-500':'fixed w-[75%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[150] dark:from-slate-400 dark:to-slate-900 top-0 right-[-100%] text-slate-900 dark:text-white ease-in duration-500'}>
             <div onClick={handleSideBar} className='absolute top-2 right-2 z-[200] hover:scale-110 ease-in duration-200 dark:text-white'>
                 <AiOutlineClose size={20}/>
             </div>
-            <Link onClick={handleSideBar} href='#home' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-slate-700 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='#home' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-slate-400 dark:to-slate-700 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineHome size={20}/>
                 <span>Home</span>
             </Link>
-            <Link onClick={handleSideBar} href='#about' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-slate-700 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='#about' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-slate-400 dark:to-slate-700 dark:shadow-gray-100 dark:shadow-md'>
                 <BsPerson size={20}/>
                 <span>About</span>
             </Link>
-            <Link onClick={handleSideBar} href='#services' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-slate-700 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='#services' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-slate-400 dark:to-slate-700 dark:shadow-gray-100 dark:shadow-md'>
                 <MdWorkOutline size={20}/>
                 <span>Services</span>
             </Link>
-            <Link onClick={handleSideBar} href='#projects' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-slate-700 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='#projects' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-slate-400 dark:to-slate-700 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineProject size={20}/>
                 <span>Projects</span>
             </Link>
-            <Link onClick={handleSideBar} href='#contact' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-slate-700 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='#contact' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gray-100 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-slate-400 dark:to-slate-700 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineMail size={20}/>
                 <span>Contact</span>
             </Link>
