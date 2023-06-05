@@ -115,7 +115,7 @@ function Contact() {
                 <p className='text-rose-400'>{errors.message?.message}</p>
               </div>
               <p>{successMessage}</p>
-              <button type='submit' className='p-3 mt-1 md:mt-2 border-2 border-sky-400 shadow-lg rounded-lg hover:bg-sky-400 hover:text-white ease-in duration-300'>Send</button>
+              <button type='submit' className='p-3 mt-1 md:mt-2 border-2 border-sky-400 shadow-lg rounded-lg hover:bg-gradient-to-r from-sky-800 to-sky-200 hover:text-white dark:hover:text-black ease-in duration-200'>Send</button>
             </form>
           </div>
         </div>
