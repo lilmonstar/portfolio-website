@@ -9,7 +9,7 @@ import Link from 'next/link'
 export default function Hero() {
   return (
     <div className='w-full min-h-screen relative' id='home'>
-    <div className='w-full min-h-screen'>
+    <div>
         <Image src={myImg} alt='image' className='w-[100%] min-h-screen object-cover'></Image>
     </div>
     <div className='absolute w-full min-h-screen top-0 left-0 bg-white/50 flex flex-col justify-center items-center gap-6 md:gap-8 lg:gap-10'>
