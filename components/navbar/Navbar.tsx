@@ -38,10 +38,10 @@ const Navbar = () => {
         <span className='hidden lg:flex'>Michael Balderas</span>
         </div>
         <div className='hidden justify-evenly sm:flex gap-2 md:gap-4 lg:gap-6'>
-            <Link href="#about" className='hover:underline truncate'>About</Link>
-            <Link href="#services" className='hover:underline truncate'>Services</Link>
-            <Link href="#projects" className='hover:underline truncate'>Projects</Link>
-            <Link href="#contact" className='hover:underline truncate'>Contact</Link>
+            <Link href="/#about" className='hover:underline truncate'>About</Link>
+            <Link href="/#services" className='hover:underline truncate'>Services</Link>
+            <Link href="/#projects" className='hover:underline truncate'>Projects</Link>
+            <Link href="/#contact" className='hover:underline truncate'>Contact</Link>
             {darkMode?
             <button onClick={handleClick} className='dark:text-sky-400'><MdOutlineLightMode/></button>
             :<button onClick={handleClick} className='text-slate-900'><MdDarkMode/></button>
@@ -64,19 +64,19 @@ const Navbar = () => {
                 <AiOutlineHome size={20}/>
                 <span>Home</span>
             </Link>
-            <Link onClick={handleSideBar} href='#about' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='/#about' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
                 <BsPerson size={20}/>
                 <span>About</span>
             </Link>
-            <Link onClick={handleSideBar} href='#services' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='/#services' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
                 <MdWorkOutline size={20}/>
                 <span>Services</span>
             </Link>
-            <Link onClick={handleSideBar} href='#projects' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='/#projects' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-400 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineProject size={20}/>
                 <span>Projects</span>
             </Link>
-            <Link onClick={handleSideBar} href='#contact' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-300 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
+            <Link onClick={handleSideBar} href='/#contact' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-r from-gray-50 to-gray-300 shadow-gray-500 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineMail size={20}/>
                 <span>Contact</span>
             </Link>
