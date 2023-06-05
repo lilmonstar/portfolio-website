@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         </nav>
         <div className={sideBar?'fixed w-full h-screen top-0 right-0 bg-gray-100/70 dark:white/70 z-[900]':''}>
-        <div className={sideBar?'fixed w-[75%] sm:w-[60%] md:w-[45%] lg:w-[40%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[1000] dark:from-slate-400 dark:to-slate-900 top-0 right-0 text-slate-900 dark:text-white ease-in duration-500':'fixed w-[75%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[1000] dark:from-slate-400 dark:to-slate-900 top-0 right-[-100%] text-slate-900 dark:text-white ease-in duration-500'}>
+        <div className={sideBar?'fixed w-[75%] sm:w-[60%] md:w-[45%] lg:w-[40%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[1000] dark:from-slate-400 dark:to-slate-900 top-0 right-0 text-slate-900 dark:text-white ease-in duration-300':'fixed w-[75%] h-screen bg-gradient-to-b from-sky-50 to-sky-500 flex flex-col justify-center items-center z-[1000] dark:from-slate-400 dark:to-slate-900 top-0 right-[-100%] text-slate-900 dark:text-white ease-in duration-300'}>
             <div onClick={handleSideBar} className='absolute top-2 right-2 z-[1100] hover:scale-110 ease-in duration-200 dark:text-white'>
                 <AiOutlineClose size={20}/>
             </div>
