@@ -5,7 +5,7 @@ import profileImg from '../public/images/blank_profile.jpg'
 
 function About() {
   return (
-    <div className='w-full h-screen flex flex-col items-center justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16'  id='about'>
+    <div className='w-full min-h-screen flex flex-col items-center justify-center gap-10 sm:gap-12 md:gap-14 lg:gap-16'  id='about'>
       <h2>About Me</h2>
       <div className='flex flex-col items-center md:items-start justify-center gap-6 md:flex-row'>
         <Image src={profileImg} alt='profile' className='object-cover mx-4 max-w-[200px] h-[250px]'></Image>
