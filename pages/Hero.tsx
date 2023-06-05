@@ -10,9 +10,9 @@ export default function Hero() {
   return (
     <div className='w-full min-h-screen relative' id='home'>
     <div>
-        <Image src={myImg} alt='image' className='w-[100%] min-h-screen object-cover'></Image>
+        <Image src={myImg} alt='image' className='w-[100%] h-screen object-cover'></Image>
     </div>
-    <div className='absolute w-full min-h-screen top-0 left-0 bg-white/50 flex flex-col justify-center items-center gap-6 md:gap-8 lg:gap-10'>
+    <div className='absolute w-full h-screen top-0 left-0 bg-white/50 flex flex-col justify-center items-center gap-6 md:gap-8 lg:gap-10'>
         <h1 className='text-slate-900 dark:text-white'>I&apos;m Michael Balderas</h1>
         <h3 className='text-slate-700 dark:text-gray-50'>I&apos;m 
         <TypeAnimation
