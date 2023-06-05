@@ -47,7 +47,7 @@ function Contact() {
 
   return (
     <div className='w-full min-h-screen flex flex-col items-center justify-evenly' id='contact'>
-        <h2>Contact Me</h2>
+        <h2 className='mt-8 mb-2'>Contact Me</h2>
         <div className='flex flex-col-reverse md:grid md:grid-cols-3 gap-4 md:gap-4 lg:gap-6 m-2'>
           <div className='flex flex-col gap-2 sm:gap-2 md:gap-3 lg:gap-4 md:col-span-1 p-2 border-2 rounded-lg shadow-lg'>
             <p className='tracking-widest mb-2'>LET&apos;S CONNECT</p>
