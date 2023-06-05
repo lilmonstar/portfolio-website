@@ -85,7 +85,7 @@ function Contact() {
                 <input type="email" id='email' {...register('email', {
                   required:{
                     value: true,
-                    message: "Email is required"
+                    message: "*Email is required"
                   },
                   pattern:{
                     value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
