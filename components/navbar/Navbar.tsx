@@ -61,7 +61,7 @@ const Navbar = () => {
                 <AiOutlineClose size={20}/>
             </div>
             <div className='flex flex-col w-full h-full items-center justify-evenly'>
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col gap-10 sm:gap-12'>
                     <h3 className='font-semibold text-gray-800 dark:text-white'>Michael Balderas</h3>
                     <div className='flex flex-col items-center justify-center gap-2 italic text-base md:flex-row md:text-lg'>
                         <p>Learning</p>
@@ -69,7 +69,7 @@ const Navbar = () => {
                         <p>stops</p>
                     </div>
                 </div>
-            <div className='flex flex-col w-full items-center justify-center gap-2'>
+            <div className='flex flex-col w-full items-center justify-center gap-2 mb-12'>
             <Link onClick={handleSideBar} href='/' className='w-[75%] flex justify-center gap-2 items-center rounded-full shadow-lg bg-gradient-to-b from-gray-50 to-gray-400 shadow-gray-600 m-2 p-4 hover:scale-110 ease-in duration-200 dark:bg-gradient-to-r dark:from-blue-400 dark:to-blue-800 dark:shadow-gray-100 dark:shadow-md'>
                 <AiOutlineHome size={20}/>
                 <span>Home</span>
