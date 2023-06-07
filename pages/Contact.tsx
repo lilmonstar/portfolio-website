@@ -137,6 +137,10 @@ function Contact() {
                   minLength:{
                     value:10,
                     message: "*Message must have atleast ten characters long."
+                  },
+                  maxLength:{
+                    value:800,
+                    message: "*Message must not be more than eight hundred characters long."
                   }
                 })}/>
                 <p className='text-rose-400'>{errors.message?.message}</p>
