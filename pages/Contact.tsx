@@ -15,6 +15,7 @@ type FormValues = {
 
 function Contact() {
   const [successMessage, setSuccessMessage] = useState('')
+  const [isSuccess, setIsSuccess] = useState(false)
   const formRef = useRef<any>()
   const form = useForm<FormValues>()
   const { register, handleSubmit, formState:{errors}, reset } = form
@@ -38,10 +39,12 @@ function Contact() {
           // console.log(result.text);
           reset()
           setSuccessMessage("Your message has been sent. We'll get back to you soon :)")
+          setIsSuccess(true)
       }, (error: any) => {
           reset()
           // console.log(error.text);
           setSuccessMessage("An unexpected error occured. Please try again later.")
+          setIsSuccess(false)
       });
   }
 
@@ -76,6 +79,14 @@ function Contact() {
                   required:{
                     value: true,
                     message: "*Name is required."
+                  },
+                  minLength:{
+                    value:2,
+                    message: "*Name must be atleast two characters long."
+                  },
+                  maxLength:{
+                    value:50,
+                    message: "*Name must not be more than fifty characters."
                   }
                 })}/>
                  <p className='text-rose-400'>{errors.name?.message}</p>
@@ -90,6 +101,10 @@ function Contact() {
                   pattern:{
                     value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                     message:"*Invalid email format."
+                  },
+                  maxLength: {
+                    value:80,
+                    message: "*Email must not be more than eighty characters."
                   }
                 })}/>
                 <p className='text-rose-400'>{errors.email?.message}</p>
@@ -100,6 +115,14 @@ function Contact() {
                   required:{
                     value: true,
                     message: "*Subject is required."
+                  },
+                  minLength:{
+                    value:4,
+                    message: "*Subject must be atleast four characters long."
+                  },
+                  maxLength:{
+                    value:50,
+                    message: "*Subject must not be more than fifty characters."
                   }
                 })}/>
                 <p className='text-rose-400'>{errors.subject?.message}</p>
@@ -110,11 +133,15 @@ function Contact() {
                   required:{
                     value: true,
                     message: "*Message is required."
+                  },
+                  minLength:{
+                    value:10,
+                    message: "*Message must have atleast ten characters long."
                   }
                 })}/>
                 <p className='text-rose-400'>{errors.message?.message}</p>
               </div>
-              <p>{successMessage}</p>
+              <p className={isSuccess? `text-green-400`: `text-rose-400`}>{successMessage}</p>
               <button type='submit' className='p-3 mt-1 md:mt-2 border-2 border-sky-400 shadow-lg rounded-lg hover:bg-gradient-to-r from-sky-800 to-sky-200 hover:text-white dark:hover:text-black ease-in duration-200'>Send</button>
             </form>
           </div>
