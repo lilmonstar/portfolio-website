@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import profileImg from '../public/images/blank_profile.jpg'
+import profileImg from '../public/images/profile1.jpg'
 
 function About() {
   return (
